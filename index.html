@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>株式会社LeadCraft - 営業代行のプロフェッショナル</title>
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html">
+                    株式会社LeadCraft
+                </a>
+            </div>
+            <ul class="nav" id="nav">
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="news_list.html">お知らせ</a></li>
+                <li><a href="#services">事業内容</a></li>
+                <li><a href="#contact">お問合せ</a></li>
+                <li><a href="#company">会社概要</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>営業のプロフェッショナルチーム</h1>
+                <p>営業代行・人材育成を通して、あなたのビジネスを加速させます。</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="container">
+            <h2 class="section-title fade-in">最新のお知らせ</h2>
+            <div class="news-grid" id="news-list">
+                <!-- ニュース記事はJavaScriptで動的に生成 -->
+            </div>
+            <div class="view-all-btn fade-in">
+                <a href="news.html">すべてのお知らせを見る</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title fade-in">事業内容</h2>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <h3>営業代行事業</h3>
+                    <img src="img/man.png" alt="営業代行事業">
+                    <p>大手企業様より受託、確かな実績で高評価を頂いております。</p>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>営業コンサルティング事業</h3>
+                    <img src="img/up.png" alt="営業コンサルティング事業">
+                    <p>営業プロセスの最適化から人材育成まで、包括的なコンサルティングサービスを提供いたします。</p>
+                </div>
+                <div class="service-card fade-in">
+                    <h3>配送事業</h3>
+                    <img src="img/truck.png" alt="配送事業">
+                    <p>迅速かつ確実な配送サービスで、お客様のビジネスをサポートいたします。</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">お問い合わせ</h2>
+            <div class="contact-content">
+                <div class="fade-in">
+                    <h3>無料相談受付中</h3>
+                    <br><br>
+                    <p>営業課題の解決策について、専門コンサルタントが無料でご相談をお受けします。お気軽にお問い合わせください。</p>
+                    <br>
+                    <p><strong>TEL:</strong> 03-1234-5678</p>
+                    <p><strong>Email:</strong> info@salesforcepro.jp</p>
+                    <p><strong>受付時間:</strong> 平日 9:00-18:00</p>
+                </div>
+                <form class="contact-form fade-in" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="company_name">会社名</label>
+                        <input type="text" id="company_name" name="company_name" placeholder="株式会社○○" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">お名前</label>
+                        <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" placeholder="yamada@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">電話番号</label>
+                        <input type="tel" id="phone" name="phone" placeholder="03-1234-5678">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">お問い合わせ内容</label>
+                        <textarea id="message" name="message" rows="4" placeholder="現在の営業課題や相談したい内容をお聞かせください"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">送信する</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="slider">
+        <div class="slider">
+            <div class="slide-track">
+                <img src="img/24046143_s.jpg" alt="社内イメージ">
+                <img src="img/24139525_s.jpg" alt="社内イメージ">
+                <img src="img/26407266_s.jpg" alt="社内イメージ">
+                <img src="img/28337134_s.jpg" alt="社内イメージ">
+                <img src="img/30220186_s.jpg" alt="社内イメージ">
+                <img src="img/31518344_s.jpg" alt="社内イメージ">
+
+                <img src="img/24046143_s.jpg" alt="社内イメージ">
+                <img src="img/24139525_s.jpg" alt="社内イメージ">
+                <img src="img/26407266_s.jpg" alt="社内イメージ">
+                <img src="img/28337134_s.jpg" alt="社内イメージ">
+                <img src="img/30220186_s.jpg" alt="社内イメージ">
+                <img src="img/31518344_s.jpg" alt="社内イメージ">
+            </div>
+        </div>
+    </div>
+
+    <section id="company" class="company">
+        <div class="container">
+            <h2 class="section-title fade-in">会社概要</h2>
+            <div id="company-contents">
+                <ul class="company-info fade-in">
+                    <li><strong>会社名：</strong>株式会社LeadCraft</li>
+                    <li><strong>所在地：</strong>東京都渋谷区〇〇〇〇</li>
+                    <li><strong>代表者：</strong>山田 太郎</li>
+                    <li><strong>設立：</strong>2025年1月</li>
+                    <li><strong>事業内容：</strong>営業代行、営業支援コンサルティング</li>
+                    <li><strong>資本金：</strong>500万円</li>
+                    <li><strong>従業員数：</strong>10名</li>
+                </ul>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6477.840078311332!2d139.71607!3d35.728185!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d68d0a8945d%3A0x5edbb6fec121e93c!2z44CSMTcwLTAwMTMg5p2x5Lqs6YO96LGK5bO25Yy65p2x5rGg6KKL77yR5LiB55uu77yS77yV4oiS77yW!5e0!3m2!1sja!2sjp!4v1751075233094!5m2!1sja!2sjp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="footer" class="container">
+            <p>&copy; 2025 株式会社LeadCraft. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script/news_data.js" defer></script>
+    <script src="script/main.js" defer></script>
+    <script src="script/smartphone.js" defer></script>
+</body>
+
+</html>

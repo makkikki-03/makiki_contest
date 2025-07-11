@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お知らせ一覧｜株式会社LeadCraft</title>
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/news.css">
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <div class="logo">
+        <a href="index.html">株式会社LeadCraft</a>
+      </div>
+      <ul class="nav" id="nav">
+        <li><a href="index.html#home">ホーム</a></li>
+        <li><a href="news_list.html">お知らせ</a></li>
+        <li><a href="index.html#services">事業内容</a></li>
+        <li><a href="index.html#contact">お問合せ</a></li>
+        <li><a href="index.html#company">会社概要</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="section-title fade-in">お知らせ一覧</h2>
+      <div class="news-list" id="newsList">
+        <!-- JSでここに記事を挿入 -->
+      </div>
+    </div>
+
+    <div class="back-btn fade-in">
+      <a href="index.html">TOPにもどる</a>
+    </div>
+
+  </main>
+
+  <footer>
+    <div id="footer" class="container">
+      <p>&copy; 2025 株式会社LeadCraft. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script/news_data.js" defer></script>
+  <script src="script/news_list.js" defer></script>
+  <script src="script/smartphone.js" defer></script>
+  <script src="script/main.js" defer></script>
+</body>
+
+</html>
